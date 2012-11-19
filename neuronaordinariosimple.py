@@ -37,3 +37,14 @@ class Neurona(object):
 	def aprendizaje(self, y, t, x):
 		for i in range(self.w.size-1):
       			self.w[i] += alpha*(t - y)*x
+
+#Numero de pruebas que queremos que haga la red
+ITER = int(argv[1])
+
+#Objeto de la neurona
+neurona = Neurona(1)
+
+#Contador veces que la neurona acerto
+bien = 0
+#Contador veces que la neurona fallo
+mal = 0
