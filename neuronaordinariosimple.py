@@ -70,3 +70,19 @@ for i in range(ITER):
 	
 	#Imprimimos lo obtenido
 	print "Muestra: %s Salida de la Neurona: %s Salida Correcta: %s"%(muestra, y, t)
+
+	#Realizar el entrenamiento
+	#Si lo recibido por la neurona es lo mismo a lo esperado
+	#aumentamos el contador bien y continuamos 
+	if y == t:
+		bien += 1
+	
+	#De lo contrario se aumenta el contador de equivocada, pero
+	#se entrena la neurona ajustando los pesos para buscar acertar en la siguiente
+	else:
+		mal += 1
+		neurona.aprendizaje(y, t, muestra)
+
+print "Bien ",bien
+print "Mal ",mal
+
