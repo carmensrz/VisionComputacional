@@ -48,3 +48,25 @@ neurona = Neurona(1)
 bien = 0
 #Contador veces que la neurona fallo
 mal = 0
+
+#Contador que corre el numero de pruebas introducidas por el usuario
+for i in range(ITER):
+	y = ""
+	t = 0
+	#Obtener una muestra aleatoria (x), un numero entre 0 y 2
+	muestra = uniform(0, 2)
+	
+	#Aqui se define lo que entrena la neurona
+	#Si la muestra es mayor a 1, el valor esperado es 1
+	if muestra > 1:
+		t = 1
+	
+	#Si la muestra es menor a 1, el valor esperado es 0
+	else:
+		t = 0
+	
+	#Corremos la neurona con la muestra generada
+	y = neurona.activacion(muestra)
+	
+	#Imprimimos lo obtenido
+	print "Muestra: %s Salida de la Neurona: %s Salida Correcta: %s"%(muestra, y, t)
