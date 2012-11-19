@@ -1,6 +1,13 @@
 #!/usr/bin/python 
                                                                                                                                           import random
 
+<<<<<<< HEAD
+=======
+#!/usr/bin/python 
+                                                                                                                                            
+import random
+
+>>>>>>> 92df799b1c1a96417544e30f8470d860951e5b0c
 x=[]
 w=[] 	#pesos
 wn=[] 	#pesos nuevos
@@ -15,6 +22,7 @@ suma = 0
 mult = 0
 cont = 0
 i = 1
+<<<<<<< HEAD
 
 
 def main(): 	
@@ -26,11 +34,29 @@ def inicio():
     for i in range(10):
 
         x.insert(i,random.uniform(0,1))	#generar cadena de entradas binarias aleatorias 
+=======
+
+def main(): 	
+                                                                                                                                     
+    global x,w,wn,wi,umbral
+
+def inicio():
+    
+    global x
+
+    for i in range(10):
+
+        x.insert(i,random.uniform(0.0,1.0))	#generar cadena de entradas binarias aleatorias 
+>>>>>>> 92df799b1c1a96417544e30f8470d860951e5b0c
                                                                                                                            
         w.insert(i,random.uniform(-1.0,1.0))	#generar cadenas de pesos random
                                                                                                                                                                                                                             
     x.append(-1)			#agregar al vector de entradas un -1 al final
+<<<<<<< HEAD
     print '\nVector de elementos de entrada generado \n', x[:]
+=======
+    print '\nVector de elementos de entrada introducido \n', x[:]
+>>>>>>> 92df799b1c1a96417544e30f8470d860951e5b0c
                                                                                                        
     w.append(umbral)			#agregar al vector de pesos el umbral al final
     print '\nVector de elementos de pesos generado \n', w[:]
@@ -38,7 +64,11 @@ def inicio():
     sumatoria()   			#brincar a la funcion sumatoria
 
 def sumatoria():
+<<<<<<< HEAD
     
+=======
+    global x
+>>>>>>> 92df799b1c1a96417544e30f8470d860951e5b0c
     global suma
     suma=0
     res=0
@@ -47,6 +77,7 @@ def sumatoria():
                                                                                                         
     suma = suma + res			#actualizar sumatoria
                                                                                                           
+<<<<<<< HEAD
     #t = raw_input("\nSalida Esperada (0 o 1): ")	#pedir al usuario salida esperada
     t = random.randint(0,1)		#generar solucion esperada aleatoria entre 0 y 1
     #t = int(t)
@@ -54,6 +85,12 @@ def sumatoria():
                                                                                                   
     print '\nLa sumatoria de productos de entradas por pesos es:', suma	#imprimir la sumatoria total del producto de entradas por pesos
     print '\nEl umbral es igual a: ', umbral
+=======
+    t = raw_input("\nSalida Esperada (0 o 1): ")	#pedir al usuario salida esperada
+    t = int(t)
+                                                                                                  
+    print '\nLa sumatoria de productos de entradas por pesos es:', suma	#imprimir la sumatoria total del producto de entradas por pesos
+>>>>>>> 92df799b1c1a96417544e30f8470d860951e5b0c
     
     comparacion(t)			#brincar a la funcion comparacion
     
@@ -95,8 +132,14 @@ def comparacion(t):
     return w[:]
         
       
+<<<<<<< HEAD
 def main():
     #for n in range (10):        
     	inicio()	
+=======
+def main():        
+    inicio()	
 
-main()
+main()    
+>>>>>>> 92df799b1c1a96417544e30f8470d860951e5b0c
+
