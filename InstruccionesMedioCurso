@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-En la Fase2, las entradas ya son aleatorias, dejando sólo al usuario la elección de la salida esperada. Al comparar ésta ùltima con la obtenida, decide si estuvo bien o necesita hacer un ajuste en los pesos cuando hace este ajuste y satisface la salida deseada termina la ejecución.
-=======
 En la Fase1, el programa pide 10 valores entre 0 y 1 al usuario y realiza el calculo de la sumatoria para posteriormente
 pedir la salida deseada y establecer si estuvo bien o estuvo mal.
 
-<<<<<<< HEAD
 En la Fase2, las entradas ya son aleatorias, dejando sólo al usuario la elección de la salida esperada. Al comparar ésta ùltima con la obtenida, decide si estuvo bien o necesita hacer un ajuste en los pesos cuando hace este ajuste y satisface la salida deseada termina la ejecución.
-=======
->>>>>>> 9096f4bbf00299ab1389762dd92f7ee83257db30
->>>>>>> 845ca8c6d80f8277dcd0ebea3ee551467a668eaf
 
 En la Fase3, el cambio más significativo es que ya no se inmiscuye al usuario en la ejecución, todo se realiza de forma "automática". La salida esperada es decidida por el mismo programa. Dependiendo de la comparación con la salida obtenida decide si realiza o no el ajuste en los pesos.
+
+En la Fase4, sólo quedó agregar que el usuario decidiera el nùmero de veces que quiere que la red neuronal haga las pruebas, así como un contador que indique cuántas veces necesitó realizar un ajuste en los pesos.
