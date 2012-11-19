@@ -32,3 +32,8 @@ class Neurona(object):
 			return 1
 		else:
 			return 0
+
+	#Funcion de aprendizaje 
+	def aprendizaje(self, y, t, x):
+		for i in range(self.w.size-1):
+      			self.w[i] += alpha*(t - y)*x
