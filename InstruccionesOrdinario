@@ -1,0 +1,9 @@
+Para la nueva neurona implementada para el curso ordinario, es necesario contar con Numpy instalado.
+
+Consiste en un perceptrón simple y una sola neurona. Clasifica entre resultados obtenidos correctos y erróneos.
+
+Para correr este script basta con hacer lo siguiente en la línea de comandos:
+
+python neuronaordinariosimple.py 500
+
+Siendo el nùmero del final el total de pruebas que queremos que la neurona haga, el usuario puede poner cuantas quiera. A mayor nùmero de pruebas actua mejor la regla del aprendizaje además de ser más notoria.
