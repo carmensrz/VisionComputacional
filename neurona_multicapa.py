@@ -40,11 +40,6 @@ class Neurona(object):
 		self.lw = [self.we,self.ws]
 		pickle.dump(self.lw,open(outfile,'w'))
 		#self.reset()
-	
-	#def reset(self):
-	#	for i in range (len(self.lw)):
-	#		Z = uniform(self.ce[i].size,self.cs[i].size)
-	#		self.lw[i][...] = (2*Z-1)*0.25
 		
 	#Cargar el archivo de pesos
 	def cargar(self, outfile):
@@ -149,7 +144,7 @@ class Neurona(object):
 def main():
 
 
-	#Definir un patron, de tamaño 4, con 2 entradas y 1 salida
+	#Definir un patron, de tamanio 4, con 2 entradas y 1 salida
 	neurona = Neurona(2,2,1)
 	print "Aprendiendo funcion logica OR"
 	patron = np.zeros(4, dtype=[('input', float, 2), ('output', float, 1)])
