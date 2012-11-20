@@ -2,9 +2,14 @@ Entrada Basica de la red neuronal
 
 -Abrimos la imagen y en base a la imagen leemos cada pixel para poder sacar valores de 0 y 1 en base a su color. Es necesario tener la imagen de la huella digital en la misma carpeta del archivo llamado img1.png.
 
+Entrada de la red neuronal
+
+-Nos genera un archivo en donde nos dice que color en RGB tiene cada pixel.
+Ocupa una imagen de la huella llamada "img8.png" para que nos genere 2 archivos de texto, uno donde nos crea la imagen binaria y otra los colores de cada pixel.
+
 Entrada con Resultados
 
--Abrimos la imagen, obtenemos su codificaciÃ³n en binario en base a sus pixeles y lo comparamos con otra imagen. Con esto determinamos si son iguales o son distintas.
+-Abrimos la imagen, obtenemos su codificación en binario en base a sus pixeles y lo comparamos con otra imagen. Con esto determinamos si son iguales o son distintas.
 
 Salida con Resultados
 
