@@ -5,3 +5,7 @@ Entrada Basica de la red neuronal
 Entrada con Resultados
 
 -Abrimos la imagen, obtenemos su codificación en binario en base a sus pixeles y lo comparamos con otra imagen. Con esto determinamos si son iguales o son distintas.
+
+Salida con Resultados
+
+-Comparamos las imagenes obteniendo como resultado un mensaje donde te dice si es igual o no son iguales las imagenes.
