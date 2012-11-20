@@ -2,17 +2,11 @@
 
 import os
 
-c1 = open("Comp1.txt", "r")
-c2 = open("Comp2.txt", "r")
+directory=os.path.join("/home/daniel/Desktop/proyecto")
 
-archivoUno = c1.readlines()
-archivoDos = c2.readlines()
-c1.close()
-c2.close()
-
-if archivoUno == archivoDos:
-	print "Es igual"
-else:
-	print "No es igual"
+for root,dirs,files in os.walk(directory):
+	for file in files:
+		if file.endswith(".txt"):           
+			print "encontrado"
 
 
