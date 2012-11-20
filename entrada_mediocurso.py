@@ -3,6 +3,9 @@
 #Importamos las librerias necesarias
 import Image, sys
 
+#Creamos un nuevo archivo para guardas los datos binarios 
+f = open("huella1.txt", "w")
+
 #Variables
 x = 1
 y = 1
@@ -19,5 +22,9 @@ for y in range(0,209): #Largo
 	       	        c= 1
 		else:
 			c= 0                   #Si no es blanco entonces se guarda 0
-		print c				       #Imprimimos en terminal
+		f.write(str(c))            #Escribimos en el archivo
+	f.write('\n')
+f.close()					       #Cerramos el archivo
+
+print "Huella grabada con exito"
 
