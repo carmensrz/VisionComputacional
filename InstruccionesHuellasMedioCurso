@@ -1,5 +1,0 @@
-Entrada Basica de la red neuronal
-
--Abrimos la imagen y en base a la imagen leemos cada pixel para poder sacar valores de 0 y 1 en base a su color. Es necesario tener la imagen de la huella digital en la misma carpeta del archivo llamado img1.png.
-
-
